@@ -1,0 +1,13 @@
+$primary-color: #1a36a8;
+$blue-brand-color: #003383;
+$red-brand-color: #d43e36;
+$fucsia-brand-color: #db0fa8;
+$white-brand-color: #ffffff;
+
+:export {
+	primaryColor: $primary-color;
+	blueBrandColor: $blue-brand-color;
+	redBrandColor: $red-brand-color;
+	fucsiaBrandColor: $fucsia-brand-color;
+	whiteBrandColor: $white-brand-color;
+}
