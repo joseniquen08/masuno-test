@@ -1,9 +1,9 @@
-import variables from "@/styles/variables.module.scss"
+import { Navbar } from "@/components/Navbar"
 
 export default function Home() {
 	return (
 		<main>
-			<h1 style={{ color: variables.primaryColor }}>Hello, Next.js!</h1>
+			<Navbar />
 		</main>
 	)
 }
