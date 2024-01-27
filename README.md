@@ -4,15 +4,15 @@
 
 ## Tecnologías
 
-- Nextjs
+- React [Next.js]
 - TypeScript
 - Sass
 
 ## Requerimientos
 
-- Versión de Nodejs: >= 20.11.0
+- Versión de Node.js: >= 20.11.0
 - De preferencia tener instalado pnpm
-- Se recomienda usar VS Code y tener lso plugins de [Sass](https://marketplace.visualstudio.com/items?itemName=Syler.sass-indented) y [Prettier](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode)
+- Se recomienda usar VS Code y tener los plugins instalados de [Sass](https://marketplace.visualstudio.com/items?itemName=Syler.sass-indented) y [Prettier](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode)
 
 ## Para empezar
 
