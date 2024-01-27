@@ -1,0 +1,286 @@
+@import "@/styles/variables.module.scss";
+
+.section {
+	width: 100%;
+	background: $primary-color;
+
+	.container {
+		max-width: 1440px;
+		margin: auto;
+		display: grid;
+		grid-template-columns: repeat(2, minmax(0, 1fr));
+		padding: 4rem;
+	}
+
+	.col-1 {
+		color: $white-brand-color;
+		display: flex;
+		flex-direction: column;
+		gap: 2.5rem;
+		padding-right: 5rem;
+
+		.col-1-header {
+			display: flex;
+			flex-direction: column;
+
+			.paragraph-top {
+				display: inline-flex;
+				align-items: center;
+				gap: 0.5rem;
+				font-size: 1.5rem;
+				font-weight: 600;
+			}
+
+			.paragraph-middle {
+				display: inline-flex;
+				font-size: 3.5rem;
+				font-weight: 700;
+			}
+
+			.paragraph-bottom {
+				display: inline-flex;
+				align-items: flex-end;
+				gap: 1rem;
+
+				.pb-start {
+					font-size: 2.5rem;
+					font-weight: 700;
+				}
+
+				.pb-end {
+					font-size: 3.5rem;
+					font-weight: 700;
+					position: relative;
+
+					img {
+						position: absolute;
+						left: 0;
+						bottom: -0.5rem;
+					}
+				}
+			}
+		}
+
+		.col-1-deadline {
+			font-size: 1.75rem;
+			font-weight: 700;
+		}
+
+		article {
+			width: 100%;
+			background: $white-brand-color;
+			padding: 1rem;
+
+			.coupon-content {
+				border: 1px $blue-brand-color dashed;
+				height: 100%;
+				padding: 0.5rem 1.25rem;
+				border-radius: 0.9375rem;
+				color: $blue-brand-color;
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				gap: 0.5rem;
+				position: relative;
+
+				.paragraph-top {
+					font-size: 2rem;
+					font-weight: 600;
+					color: $fucsia-brand-color;
+					text-align: center;
+					margin-bottom: 1rem;
+					position: relative;
+
+					img {
+						position: absolute;
+						left: 0;
+						bottom: -1.25rem;
+					}
+				}
+
+				.percent-content {
+					display: flex;
+					align-items: center;
+					justify-content: center;
+
+					.pc-image {
+						height: 7.5rem;
+					}
+
+					.pc-paragraph {
+						display: flex;
+						flex-direction: column;
+
+						.pc-top {
+							font-size: 1.5rem;
+							font-weight: 600;
+						}
+
+						.pc-bottom {
+							font-size: 1.5rem;
+							font-weight: 800;
+							color: $fucsia-brand-color;
+						}
+					}
+				}
+
+				.paragraph-bottom {
+					font-size: 0.875rem;
+					font-weight: 400;
+					text-align: center;
+				}
+
+				.cc-scissors {
+					position: absolute;
+					top: 50%;
+					right: -0.75rem;
+				}
+			}
+		}
+	}
+
+	.col-2 {
+		display: flex;
+		align-items: center;
+
+		form {
+			background: $white-brand-color;
+			width: 100%;
+			border-radius: 2rem;
+			padding: 1.5rem 3rem;
+			display: flex;
+			flex-direction: column;
+			align-items: flex-start;
+			gap: 2rem;
+			position: relative;
+
+			.form-stamp-image {
+				position: absolute;
+				top: -3rem;
+				right: -0.8rem;
+			}
+
+			.form-title {
+				color: $red-brand-color;
+				font-size: 1.5rem;
+				font-weight: 800;
+				position: relative;
+				width: auto;
+
+				img {
+					position: absolute;
+					left: 1.25rem;
+					bottom: -0.75rem;
+				}
+			}
+
+			.form-content {
+				width: 100%;
+				display: grid;
+				grid-template-columns: repeat(2, minmax(0, 1fr));
+				column-gap: 1.5rem;
+				row-gap: 0.8rem;
+
+				.form-control {
+					display: flex;
+					flex-direction: column;
+					gap: 0.32rem;
+
+					label {
+						font-size: 1rem;
+						font-weight: 500;
+						color: $gray-brand-color;
+
+						span {
+							font-weight: 750;
+							color: $red-sf-brand-color;
+						}
+					}
+
+					input {
+						border: 1px solid $gray-brand-color;
+						border-radius: 0.375rem;
+						padding: 0.5rem 1rem;
+						font-size: 1rem;
+						font-weight: 500;
+					}
+
+					select {
+						border: 1px solid $primary-color;
+						color: $primary-color;
+						border-radius: 0.375rem;
+						padding: 0.5rem 1rem;
+						font-size: 1rem;
+					}
+
+					input::placeholder {
+						color: $gray-brand-color;
+					}
+				}
+			}
+
+			.form-footer {
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				gap: 1.5rem;
+
+				.ff-checkbox {
+					width: 100%;
+					display: flex;
+					flex-direction: column;
+					gap: 0.65rem;
+
+					label {
+						color: $gray-brand-color;
+						font-size: 0.875rem;
+						display: inline-flex;
+						align-items: center;
+
+						input {
+							width: 1rem;
+							height: 1rem;
+							margin-right: 0.75rem;
+							accent-color: $primary-color;
+						}
+
+						span {
+							color: $primary-color;
+							font-weight: 700;
+							margin-left: 0.25rem;
+						}
+					}
+				}
+
+				button {
+					width: 15rem;
+					height: 3.5rem;
+					background: $primary-color;
+					color: $white-brand-color;
+					font-size: 1rem;
+					font-weight: 700;
+					border-radius: 0.375rem;
+					cursor: pointer;
+					appearance: none;
+					border: 0;
+
+					&:disabled {
+						cursor: not-allowed;
+						background: #e3e3e3;
+					}
+				}
+
+				.ff-description {
+					text-align: center;
+					font-size: 0.875rem;
+					color: $gray-dark-brand-color;
+
+					span {
+						color: $red-brand-color;
+						font-weight: 700;
+					}
+				}
+			}
+		}
+	}
+}
