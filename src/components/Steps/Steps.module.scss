@@ -1,0 +1,76 @@
+@import "@/styles/variables.module.scss";
+
+.section {
+	width: 100%;
+	background: $white-brand-color;
+
+	.container {
+		max-width: 1440px;
+		margin: auto;
+		padding: 4rem;
+		display: flex;
+		flex-direction: column;
+		gap: 3rem;
+
+		.section-title {
+			text-align: center;
+			font-size: 2rem;
+			font-weight: 700;
+			color: $primary-color;
+		}
+
+		.section-description {
+			text-align: center;
+			font-size: 1.5rem;
+			font-weight: 600;
+			color: $gray-dark-brand-color;
+
+			span {
+				font-weight: 700;
+				color: $red-brand-color;
+			}
+		}
+
+		.steps {
+			display: grid;
+			grid-template-columns: repeat(3, minmax(0, 1fr));
+
+			article {
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				text-align: center;
+				gap: 2rem;
+
+				.step-header {
+					font-size: 2rem;
+					font-weight: 700;
+					color: $primary-color;
+				}
+
+				.step-icon {
+					width: 15.25rem;
+					height: 15.25rem;
+					background: $primary-color;
+					border-radius: 100%;
+					display: flex;
+					justify-content: center;
+					align-items: center;
+					border: 5px solid $gray-brand-color;
+				}
+
+				.step-title {
+					font-size: 2rem;
+					font-weight: 700;
+					color: $primary-color;
+				}
+
+				.step-description {
+					font-size: 1.125rem;
+					font-weight: 600;
+					color: $gray-dark-brand-color;
+				}
+			}
+		}
+	}
+}
