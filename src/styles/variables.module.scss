@@ -1,13 +1,19 @@
 $primary-color: #1a36a8;
 $blue-brand-color: #003383;
 $red-brand-color: #d43e36;
+$red-sf-brand-color: #c12a21;
 $fucsia-brand-color: #db0fa8;
 $white-brand-color: #ffffff;
+$gray-brand-color: #b7b1a9;
+$gray-dark-brand-color: #595959;
 
 :export {
 	primaryColor: $primary-color;
 	blueBrandColor: $blue-brand-color;
 	redBrandColor: $red-brand-color;
+	redSfBrandColor: $red-sf-brand-color;
 	fucsiaBrandColor: $fucsia-brand-color;
 	whiteBrandColor: $white-brand-color;
+	grayBrandColor: $gray-brand-color;
+	grayDarkBrandColor: $gray-dark-brand-color;
 }
