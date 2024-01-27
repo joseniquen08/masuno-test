@@ -8,8 +8,12 @@ export function Navbar() {
 		<section className={cx("container")}>
 			<div>
 				<picture>
-					<source srcSet="/logo.svg" type="image/svg+xml" />
-					<img src="/logo.svg" alt="MAS UNO LOGO" className={cx("image")} />
+					<source srcSet="/logo_white.svg" type="image/svg+xml" />
+					<img
+						src="/logo_white.svg"
+						alt="MAS UNO LOGO"
+						className={cx("image")}
+					/>
 				</picture>
 			</div>
 		</section>
