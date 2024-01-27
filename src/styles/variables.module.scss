@@ -14,13 +14,13 @@ $gray-dark-brand-color: #595959;
 }
 
 @mixin tablet {
-	@media only screen and (min-width: 768) {
+	@media only screen and (min-width: 768px) {
 		@content;
 	}
 }
 
 @mixin desktop {
-	@media only screen and (min-width: 992) {
+	@media only screen and (min-width: 992px) {
 		@content;
 	}
 }

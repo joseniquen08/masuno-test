@@ -13,9 +13,14 @@
 		padding: 2rem 1.5rem;
 		color: $white-brand-color;
 
-		@include phone {
-			padding: 4.5rem 6rem;
+		@include desktop {
+			padding: 4.5rem 4rem;
 			grid-template-columns: repeat(3, minmax(0, 1fr));
+			gap: 3rem;
+		}
+
+		@include large {
+			padding: 4.5rem 6rem;
 			gap: 5rem;
 		}
 
@@ -25,7 +30,7 @@
 			gap: 2rem;
 			margin-top: 0;
 
-			@include phone {
+			@include desktop {
 				margin-top: 2rem;
 			}
 
@@ -79,9 +84,8 @@
 			gap: 1.5rem;
 			grid-column: span 2 / span 2;
 
-			@include phone {
+			@include desktop {
 				grid-column: span 1 / span 1;
-				display: block;
 			}
 
 			.title {
@@ -101,7 +105,7 @@
 				list-style: none;
 				margin-top: 1rem;
 
-				@include phone {
+				@include large {
 					gap: 1.75rem;
 				}
 
@@ -122,7 +126,7 @@
 				font-weight: 300;
 				letter-spacing: -0.01rem;
 
-				@include phone {
+				@include large {
 					margin-top: 3rem;
 				}
 			}

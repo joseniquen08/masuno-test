@@ -12,7 +12,13 @@
 		padding: 2rem 1rem;
 		gap: 5rem;
 
-		@include phone {
+		@include desktop {
+			padding: 2.5rem;
+			grid-template-columns: repeat(2, minmax(0, 1fr));
+			gap: 0;
+		}
+
+		@include large {
 			padding: 4rem;
 			grid-template-columns: repeat(2, minmax(0, 1fr));
 			gap: 0;
@@ -25,7 +31,11 @@
 		flex-direction: column;
 		gap: 2.5rem;
 
-		@include phone {
+		@include desktop {
+			padding-right: 3.5rem;
+		}
+
+		@include large {
 			padding-right: 5rem;
 		}
 
@@ -40,7 +50,7 @@
 				font-size: 1.25rem;
 				font-weight: 600;
 
-				@include phone {
+				@include large {
 					font-size: 1.5rem;
 				}
 			}
@@ -50,7 +60,7 @@
 				font-size: 3rem;
 				font-weight: 700;
 
-				@include phone {
+				@include large {
 					font-size: 3.5rem;
 				}
 			}
@@ -64,7 +74,7 @@
 					font-size: 2.25rem;
 					font-weight: 700;
 
-					@include phone {
+					@include large {
 						font-size: 2.5rem;
 					}
 				}
@@ -74,7 +84,7 @@
 					font-weight: 700;
 					position: relative;
 
-					@include phone {
+					@include large {
 						font-size: 3.5rem;
 					}
 
@@ -83,7 +93,7 @@
 						left: -1rem;
 						bottom: -0.8rem;
 
-						@include phone {
+						@include large {
 							left: 0;
 							bottom: -0.5rem;
 						}
@@ -96,7 +106,7 @@
 			font-size: 1.5rem;
 			font-weight: 700;
 
-			@include phone {
+			@include large {
 				font-size: 1.75rem;
 			}
 		}
@@ -106,7 +116,7 @@
 			background: $white-brand-color;
 			padding: 0.5rem;
 
-			@include phone {
+			@include large {
 				padding: 1rem;
 			}
 
@@ -130,7 +140,7 @@
 					margin-bottom: 1rem;
 					position: relative;
 
-					@include phone {
+					@include large {
 						font-size: 2rem;
 					}
 
@@ -139,7 +149,7 @@
 						left: -2.25rem;
 						bottom: -1rem;
 
-						@include phone {
+						@include large {
 							left: 0;
 							bottom: -1.25rem;
 						}
@@ -154,7 +164,11 @@
 					.pc-image {
 						height: 5rem;
 
-						@include phone {
+						@include desktop {
+							height: 6rem;
+						}
+
+						@include large {
 							height: 7.5rem;
 						}
 					}
@@ -167,7 +181,7 @@
 							font-size: 1rem;
 							font-weight: 600;
 
-							@include phone {
+							@include large {
 								font-size: 1.5rem;
 							}
 						}
@@ -177,7 +191,7 @@
 							font-weight: 800;
 							color: $fucsia-brand-color;
 
-							@include phone {
+							@include large {
 								font-size: 1.5rem;
 							}
 						}
@@ -189,7 +203,7 @@
 					font-weight: 400;
 					text-align: center;
 
-					@include phone {
+					@include large {
 						font-size: 0.875rem;
 					}
 				}
@@ -218,7 +232,7 @@
 			gap: 2rem;
 			position: relative;
 
-			@include phone {
+			@include large {
 				padding: 1.5rem 3rem;
 			}
 
@@ -228,7 +242,7 @@
 				right: -0.5rem;
 				width: 5.5rem;
 
-				@include phone {
+				@include large {
 					width: 8rem;
 					top: -3rem;
 					right: -0.8rem;
@@ -243,7 +257,7 @@
 				position: relative;
 				width: 100%;
 
-				@include phone {
+				@include large {
 					text-align: start;
 					width: auto;
 				}
@@ -253,7 +267,7 @@
 					left: 2.75rem;
 					bottom: -0.9rem;
 
-					@include phone {
+					@include large {
 						left: 1.25rem;
 						bottom: -0.75rem;
 					}
@@ -266,7 +280,7 @@
 				grid-template-columns: repeat(1, minmax(0, 1fr));
 				row-gap: 0.8rem;
 
-				@include phone {
+				@include large {
 					grid-template-columns: repeat(2, minmax(0, 1fr));
 					column-gap: 1.5rem;
 				}
@@ -327,7 +341,7 @@
 						display: inline-flex;
 						align-items: center;
 
-						@include phone {
+						@include large {
 							font-size: 0.875rem;
 						}
 
@@ -369,7 +383,7 @@
 					font-size: 0.75rem;
 					color: $gray-dark-brand-color;
 
-					@include phone {
+					@include large {
 						font-size: 0.875rem;
 					}
 
