@@ -7,6 +7,30 @@ $white-brand-color: #ffffff;
 $gray-brand-color: #b7b1a9;
 $gray-dark-brand-color: #595959;
 
+@mixin phone {
+	@media only screen and (min-width: 425px) {
+		@content;
+	}
+}
+
+@mixin tablet {
+	@media only screen and (min-width: 768) {
+		@content;
+	}
+}
+
+@mixin desktop {
+	@media only screen and (min-width: 992) {
+		@content;
+	}
+}
+
+@mixin large {
+	@media only screen and (min-width: 1200px) {
+		@content;
+	}
+}
+
 :export {
 	primaryColor: $primary-color;
 	blueBrandColor: $blue-brand-color;

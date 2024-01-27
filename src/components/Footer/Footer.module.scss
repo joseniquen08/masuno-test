@@ -8,16 +8,26 @@
 		max-width: 1440px;
 		margin: auto;
 		display: grid;
-		grid-template-columns: repeat(3, minmax(0, 1fr));
-		gap: 6rem;
-		padding: 4.5rem 6rem;
+		grid-template-columns: repeat(2, minmax(0, 1fr));
+		gap: 0;
+		padding: 2rem 1.5rem;
 		color: $white-brand-color;
+
+		@include phone {
+			padding: 4.5rem 6rem;
+			grid-template-columns: repeat(3, minmax(0, 1fr));
+			gap: 5rem;
+		}
 
 		.col-1 {
 			display: flex;
 			flex-direction: column;
 			gap: 2rem;
-			margin-top: 2rem;
+			margin-top: 0;
+
+			@include phone {
+				margin-top: 2rem;
+			}
 
 			.content {
 				display: flex;
@@ -67,6 +77,12 @@
 			display: flex;
 			flex-direction: column;
 			gap: 1.5rem;
+			grid-column: span 2 / span 2;
+
+			@include phone {
+				grid-column: span 1 / span 1;
+				display: block;
+			}
 
 			.title {
 				font-size: 1.25rem;
@@ -81,9 +97,13 @@
 
 			.social-icons {
 				display: flex;
-				gap: 1.75rem;
+				gap: 0.75rem;
 				list-style: none;
 				margin-top: 1rem;
+
+				@include phone {
+					gap: 1.75rem;
+				}
 
 				.item {
 					width: 2.75rem;
@@ -97,10 +117,14 @@
 			}
 
 			.text-footer {
-				margin-top: 3rem;
+				margin-top: 2rem;
 				font-size: 1rem;
 				font-weight: 300;
 				letter-spacing: -0.01rem;
+
+				@include phone {
+					margin-top: 3rem;
+				}
 			}
 		}
 	}

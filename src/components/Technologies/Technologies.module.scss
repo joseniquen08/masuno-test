@@ -20,24 +20,39 @@ $slideTransition: 0.5s;
 			width: 100%;
 			max-width: 1440px;
 			margin: auto;
-			padding: 0 4rem;
+			padding: 0 1rem;
 			display: flex;
 			flex-direction: column;
 			align-items: center;
-			gap: 3rem;
+			gap: 2rem;
 			position: relative;
+
+			@include phone {
+				padding: 0 4rem;
+				gap: 3rem;
+			}
 
 			.section-title {
 				text-align: center;
-				font-size: 2rem;
+				font-size: 1.65rem;
 				font-weight: 700;
 				color: $primary-color;
 
+				@include phone {
+					font-size: 2rem;
+				}
+
 				img {
 					position: absolute;
-					bottom: -2.25rem;
+					bottom: -2rem;
 					left: 50%;
 					transform: translate(-50%, 0);
+					width: 20rem;
+
+					@include phone {
+						bottom: -2.25rem;
+						width: 29.5rem;
+					}
 				}
 			}
 		}
@@ -116,23 +131,37 @@ $slideTransition: 0.5s;
 						grid-template-columns: repeat(12, minmax(0, 1fr));
 
 						.cc-description {
-							grid-column: span 7 / span 7;
-							padding: 0 7rem;
+							grid-column: span 12 / span 12;
+							padding: 0 3.5rem;
 							display: flex;
 							flex-direction: column;
 							justify-content: center;
-							gap: 1.3rem;
+							gap: 1rem;
+
+							@include phone {
+								grid-column: span 7 / span 7;
+								padding: 0 7rem;
+								gap: 1.3rem;
+							}
 
 							.ccd-title {
-								font-size: 2rem;
+								font-size: 1.75rem;
 								font-weight: 700;
 								color: $red-brand-color;
+
+								@include phone {
+									font-size: 2rem;
+								}
 							}
 
 							.ccd-description {
-								font-size: 1.125rem;
+								font-size: 1rem;
 								font-weight: 600;
 								color: #2e2e2e;
+
+								@include phone {
+									font-size: 1.125rem;
+								}
 							}
 
 							button {
@@ -151,8 +180,14 @@ $slideTransition: 0.5s;
 						}
 
 						.cc-image {
-							grid-column: span 5 / span 5;
+							grid-column: span 12 / span 12;
 							height: 35rem;
+							display: none;
+
+							@include phone {
+								grid-column: span 5 / span 5;
+								display: block;
+							}
 
 							img {
 								object-fit: cover;
@@ -168,8 +203,14 @@ $slideTransition: 0.5s;
 				position: absolute;
 				display: flex;
 				gap: 0.5rem;
-				bottom: 3rem;
-				left: 8rem;
+				bottom: 7rem;
+				left: 3.5rem;
+
+				@include phone {
+					grid-column: span 5 / span 5;
+					bottom: 3rem;
+					left: 8rem;
+				}
 
 				label {
 					height: 1rem;
@@ -185,7 +226,7 @@ $slideTransition: 0.5s;
 				left: 0;
 				top: 0;
 				bottom: 0;
-				width: 5rem;
+				width: 2.75rem;
 				height: 100%;
 				background: linear-gradient(
 					180deg,
@@ -197,6 +238,10 @@ $slideTransition: 0.5s;
 				cursor: pointer;
 				appearance: none;
 				border: 0;
+
+				@include phone {
+					width: 5rem;
+				}
 			}
 
 			.btn-carousel-next {
@@ -204,7 +249,7 @@ $slideTransition: 0.5s;
 				right: 0;
 				top: 0;
 				bottom: 0;
-				width: 5rem;
+				width: 2.75rem;
 				height: 100%;
 				background: linear-gradient(
 					180deg,
@@ -216,6 +261,10 @@ $slideTransition: 0.5s;
 				cursor: pointer;
 				appearance: none;
 				border: 0;
+
+				@include phone {
+					width: 5rem;
+				}
 			}
 		}
 	}

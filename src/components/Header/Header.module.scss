@@ -8,8 +8,15 @@
 		max-width: 1440px;
 		margin: auto;
 		display: grid;
-		grid-template-columns: repeat(2, minmax(0, 1fr));
-		padding: 4rem;
+		grid-template-columns: repeat(1, minmax(0, 1fr));
+		padding: 2rem 1rem;
+		gap: 5rem;
+
+		@include phone {
+			padding: 4rem;
+			grid-template-columns: repeat(2, minmax(0, 1fr));
+			gap: 0;
+		}
 	}
 
 	.col-1 {
@@ -17,7 +24,10 @@
 		display: flex;
 		flex-direction: column;
 		gap: 2.5rem;
-		padding-right: 5rem;
+
+		@include phone {
+			padding-right: 5rem;
+		}
 
 		.col-1-header {
 			display: flex;
@@ -27,14 +37,22 @@
 				display: inline-flex;
 				align-items: center;
 				gap: 0.5rem;
-				font-size: 1.5rem;
+				font-size: 1.25rem;
 				font-weight: 600;
+
+				@include phone {
+					font-size: 1.5rem;
+				}
 			}
 
 			.paragraph-middle {
 				display: inline-flex;
-				font-size: 3.5rem;
+				font-size: 3rem;
 				font-weight: 700;
+
+				@include phone {
+					font-size: 3.5rem;
+				}
 			}
 
 			.paragraph-bottom {
@@ -43,33 +61,54 @@
 				gap: 1rem;
 
 				.pb-start {
-					font-size: 2.5rem;
+					font-size: 2.25rem;
 					font-weight: 700;
+
+					@include phone {
+						font-size: 2.5rem;
+					}
 				}
 
 				.pb-end {
-					font-size: 3.5rem;
+					font-size: 3rem;
 					font-weight: 700;
 					position: relative;
 
+					@include phone {
+						font-size: 3.5rem;
+					}
+
 					img {
 						position: absolute;
-						left: 0;
-						bottom: -0.5rem;
+						left: -1rem;
+						bottom: -0.8rem;
+
+						@include phone {
+							left: 0;
+							bottom: -0.5rem;
+						}
 					}
 				}
 			}
 		}
 
 		.col-1-deadline {
-			font-size: 1.75rem;
+			font-size: 1.5rem;
 			font-weight: 700;
+
+			@include phone {
+				font-size: 1.75rem;
+			}
 		}
 
 		article {
 			width: 100%;
 			background: $white-brand-color;
-			padding: 1rem;
+			padding: 0.5rem;
+
+			@include phone {
+				padding: 1rem;
+			}
 
 			.coupon-content {
 				border: 1px $blue-brand-color dashed;
@@ -84,17 +123,26 @@
 				position: relative;
 
 				.paragraph-top {
-					font-size: 2rem;
+					font-size: 1.5rem;
 					font-weight: 600;
 					color: $fucsia-brand-color;
 					text-align: center;
 					margin-bottom: 1rem;
 					position: relative;
 
+					@include phone {
+						font-size: 2rem;
+					}
+
 					img {
 						position: absolute;
-						left: 0;
-						bottom: -1.25rem;
+						left: -2.25rem;
+						bottom: -1rem;
+
+						@include phone {
+							left: 0;
+							bottom: -1.25rem;
+						}
 					}
 				}
 
@@ -104,7 +152,11 @@
 					justify-content: center;
 
 					.pc-image {
-						height: 7.5rem;
+						height: 5rem;
+
+						@include phone {
+							height: 7.5rem;
+						}
 					}
 
 					.pc-paragraph {
@@ -112,22 +164,34 @@
 						flex-direction: column;
 
 						.pc-top {
-							font-size: 1.5rem;
+							font-size: 1rem;
 							font-weight: 600;
+
+							@include phone {
+								font-size: 1.5rem;
+							}
 						}
 
 						.pc-bottom {
-							font-size: 1.5rem;
+							font-size: 1rem;
 							font-weight: 800;
 							color: $fucsia-brand-color;
+
+							@include phone {
+								font-size: 1.5rem;
+							}
 						}
 					}
 				}
 
 				.paragraph-bottom {
-					font-size: 0.875rem;
+					font-size: 0.75rem;
 					font-weight: 400;
 					text-align: center;
+
+					@include phone {
+						font-size: 0.875rem;
+					}
 				}
 
 				.cc-scissors {
@@ -147,39 +211,65 @@
 			background: $white-brand-color;
 			width: 100%;
 			border-radius: 2rem;
-			padding: 1.5rem 3rem;
+			padding: 2rem 1.5rem;
 			display: flex;
 			flex-direction: column;
 			align-items: flex-start;
 			gap: 2rem;
 			position: relative;
 
+			@include phone {
+				padding: 1.5rem 3rem;
+			}
+
 			.form-stamp-image {
 				position: absolute;
-				top: -3rem;
-				right: -0.8rem;
+				top: -2.25rem;
+				right: -0.5rem;
+				width: 5.5rem;
+
+				@include phone {
+					width: 8rem;
+					top: -3rem;
+					right: -0.8rem;
+				}
 			}
 
 			.form-title {
+				text-align: center;
 				color: $red-brand-color;
 				font-size: 1.5rem;
 				font-weight: 800;
 				position: relative;
-				width: auto;
+				width: 100%;
+
+				@include phone {
+					text-align: start;
+					width: auto;
+				}
 
 				img {
 					position: absolute;
-					left: 1.25rem;
-					bottom: -0.75rem;
+					left: 2.75rem;
+					bottom: -0.9rem;
+
+					@include phone {
+						left: 1.25rem;
+						bottom: -0.75rem;
+					}
 				}
 			}
 
 			.form-content {
 				width: 100%;
 				display: grid;
-				grid-template-columns: repeat(2, minmax(0, 1fr));
-				column-gap: 1.5rem;
+				grid-template-columns: repeat(1, minmax(0, 1fr));
 				row-gap: 0.8rem;
+
+				@include phone {
+					grid-template-columns: repeat(2, minmax(0, 1fr));
+					column-gap: 1.5rem;
+				}
 
 				.form-control {
 					display: flex;
@@ -233,9 +323,13 @@
 
 					label {
 						color: $gray-brand-color;
-						font-size: 0.875rem;
+						font-size: 0.75rem;
 						display: inline-flex;
 						align-items: center;
+
+						@include phone {
+							font-size: 0.875rem;
+						}
 
 						input {
 							width: 1rem;
@@ -272,8 +366,12 @@
 
 				.ff-description {
 					text-align: center;
-					font-size: 0.875rem;
+					font-size: 0.75rem;
 					color: $gray-dark-brand-color;
+
+					@include phone {
+						font-size: 0.875rem;
+					}
 
 					span {
 						color: $red-brand-color;
